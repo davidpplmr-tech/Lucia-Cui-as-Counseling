@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psicología Online</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucia Cuiñas - Consultora Psicológica</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HERO -->
   <header class="hero">
-    <h1>Apoyo psicológico online</h1>
-    <a href="#contacto" class="btn">Agendar sesión</a>
+    <div class="overlay">
+      <h1>Lucia Cuiñas</h1>
+      <p class="hero-role">Consultora Psicológica (Counselor)</p>
+      <p class="hero-subtitle">
+        Acompaño procesos de cambio y crecimiento personal en un espacio seguro, cálido y sin juicios.
+      </p>
+      <a href="https://wa.me/5491112345678" class="btn">Agendar sesión por WhatsApp</a>
+    </div>
   </header>
 
-  <section id="sobre-mi" class="about">
-    <img src="images/lucia.jpg" alt="Foto de la profesional">
-    <div>
-      <h2>Sobre mí</h2>
-      <p>Soy psicóloga con experiencia en terapia online, especializada en ansiedad, estrés y bienestar emocional.</p>
+  <!-- SOBRE MÍ -->
+  <section class="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>Sobre mí</h2>
+        <p>
+          Hola, soy Lucía Cuiñas. Soy <strong>Consultora Psicológica (Counselor)</strong>,
+          dedicada a acompañar a quienes atraviesan momentos de crisis, dudas o búsqueda personal.
+          Creo profundamente en la capacidad que todos tenemos de <strong>crecer, sanar y transformarnos</strong>,
+          y mi rol es ayudarte a descubrir tus propios recursos internos para lograrlo.
+        </p>
+        <p>
+          Mi propuesta es ofrecerte un <strong>espacio de escucha, respeto y confianza</strong>,
+          donde puedas expresarte libremente, sin miedos ni juicios. Desde una mirada
+          <strong>humanista y empática</strong>, te acompaño a conectar con tu bienestar emocional,
+          mejorar tus relaciones y reencontrarte con vos mismo.
+        </p>
+        <p>
+          <em>Cada proceso es único, y juntos podemos recorrer el tuyo con paciencia, claridad y esperanza.</em>
+        </p>
+      </div>
+
+      <div class="about-main-photo">
+        <img src="images/lucia.jpg" alt="Lucia Cuiñas" class="profile-pic" />
+      </div>
+    </div>
+
+    <div class="container about-gallery">
+      <img src="images/about1.jpg" alt="Sesión online" />
+      <img src="images/about2.jpg" alt="Sesión presencial" />
     </div>
   </section>
 
-  <section id="servicios" class="services">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Terapia individual - USD 50</li>
-      <li>Terapia de pareja - USD 70</li>
-      <li>Orientación vocacional - USD 40</li>
-    </ul>
+  <!-- SERVICIOS -->
+  <section class="services">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/servicio1.jpg" alt="Sesión individual" />
+          <h3>Sesiones individuales</h3>
+          <p>Espacio personal de exploración y acompañamiento emocional.</p>
+          <p class="card-detail">Duración: 1 hora</p>
+          <p class="card-price"><strong>$25.000 ARS</strong></p>
+        </div>
+
+        <div class="card">
+          <img src="images/servicio2.jpg" alt="Sesión de pareja" />
+          <h3>Sesiones de pareja</h3>
+          <p>Trabajo conjunto para mejorar el vínculo, la comunicación y el diálogo.</p>
+          <p class="card-detail">Duración: 1 hora</p>
+          <p class="card-price"><strong>$40.000 ARS</strong></p>
+        </div>
+
+        <div class="card">
+          <img src="images/servicio3.jpg" alt="Sesión online" />
+          <h3>Modalidad online</h3>
+          <p>Sesiones a distancia, con la misma calidez y contención, estés donde estés.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="testimonios" class="testimonials">
-    <h2>Testimonios</h2>
-    <blockquote>
-      <p>"La terapia online me ayudó a superar momentos difíciles, totalmente recomendable."</p>
-      <footer>- Cliente satisfecha</footer>
-    </blockquote>
+  <!-- CONTACTO -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>
+        Si sentís que es momento de pedir ayuda o simplemente querés hacer una consulta,
+        podés escribirme por WhatsApp. Te respondo personalmente.
+      </p>
+      <a href="https://wa.me/5491112345678" class="btn contact-btn">Escribirme por WhatsApp</a>
+    </div>
   </section>
-
-  <section id="contacto" class="contact">
-    <h2>Contacto</h2>
-    <p>Escríbeme a: <a href="mailto:contacto@psicologia.com">contacto@psicologia.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Psicología Online</p>
-  </footer>
 </body>
 </html>
