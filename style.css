@@ -6,13 +6,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
+  color: #3b2b32;
+  background: linear-gradient(180deg, #ffe9f0 0%, #fff7fb 40%, #ffece1 100%);
   line-height: 1.6;
 }
 
 h1, h2, h3 {
   margin-top: 0;
+  color: #4b2435;
 }
 
 .container {
@@ -34,10 +35,10 @@ h1, h2, h3 {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(60, 23, 43, 0.7);
   padding: 30px 20px;
-  border-radius: 16px;
-  max-width: 700px;
+  border-radius: 20px;
+  max-width: 720px;
 }
 
 .hero-role {
@@ -50,23 +51,28 @@ h1, h2, h3 {
   margin: 0.5rem 0 1.3rem;
 }
 
+.hero-phone {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
 /* Botón */
 .btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 24px;
-  background-color: #2f6f51;
+  padding: 11px 26px;
+  background: linear-gradient(135deg, #ff7296, #ff9d7b);
   color: #fff;
   text-decoration: none;
   border-radius: 999px;
   font-weight: bold;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
   border: none;
 }
 
 .btn:hover {
-  background-color: #275843;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(158, 62, 94, 0.4);
   transform: translateY(-1px);
 }
 
@@ -75,6 +81,31 @@ h1, h2, h3 {
 .services,
 .contact {
   padding: 60px 0;
+}
+
+/* Fondos de las tarjetas/secciones para que destaquen del fondo rosado */
+.about,
+.services,
+.contact {
+  position: relative;
+}
+
+.about::before,
+.services::before,
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 0;
+}
+
+.about > .container,
+.services > .container,
+.contact > .container,
+.about > .container.about-gallery {
+  position: relative;
+  z-index: 1;
 }
 
 /* SOBRE MÍ */
@@ -106,7 +137,8 @@ h1, h2, h3 {
   height: 260px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 18px rgba(158, 62, 94, 0.4);
+  border: 4px solid #ffe0ea;
 }
 
 /* Galería de Sobre mí */
@@ -120,10 +152,11 @@ h1, h2, h3 {
 
 .about-gallery img {
   width: 280px;
-  height: 180px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(158, 62, 94, 0.25);
+  border: 3px solid #ffe0ea;
 }
 
 /* SERVICIOS */
@@ -142,18 +175,19 @@ h1, h2, h3 {
 
 .card {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 18px;
   padding: 20px;
   width: 280px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(158, 62, 94, 0.18);
   text-align: left;
+  border: 1px solid #ffd1e0;
 }
 
 .card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 14px;
   margin-bottom: 12px;
 }
 
@@ -163,7 +197,7 @@ h1, h2, h3 {
 
 .card-detail {
   font-size: 0.95rem;
-  color: #555;
+  color: #5f4a53;
 }
 
 .card-price {
@@ -183,6 +217,11 @@ h1, h2, h3 {
 
 .contact-btn {
   margin-top: 10px;
+}
+
+.contact-phone {
+  margin-top: 10px;
+  font-size: 0.95rem;
 }
 
 /* RESPONSIVE */
